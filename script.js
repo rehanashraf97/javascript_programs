@@ -237,7 +237,7 @@ if (rehan.indexOf('teacher') === -1)
 */
 
 
-////////lecture object
+////////lecture object with properties
 
 /*
 var rehan = {
@@ -268,11 +268,109 @@ babar['isMarried']= 'kabi ne hogi';
 console.log(babar);
 */
 
+////////////lecture object with methods
+
+/*
+var rehan = {
+    name: 'Rehan',
+    fatherName: 'Ashraf',
+    yearOfBirth: 1997,
+    job:'developer',
+    isMarried: false,
+    calculateAge: function(yearOfBirth){
+        return 2018 - yearOfBirth ;
+    }
+}
+
+ console.log(rehan.calculateAge(1997));
 
 
 
 
+var rehan = {
+    name: 'Rehan',
+    fatherName: 'Ashraf',
+    yearOfBirth: 1997,
+    job:'developer',
+    isMarried: false,
+    calculateAge: function(){
+      this.age = 2018 - this.yearOfBirth;    
+    }
+}
 
+
+rehan.calculateAge();
+console.log(rehan);
+
+*/
+
+
+//////////////lecture loops
+/*
+for ( var i = 0 ; i < 10 ; i++ )
+{
+    console.log(i);
+}
+
+var names = ['rehan','rahil','jamal','zulfi','babar'];
+
+
+for (var i = 0 ; i < names.length; i++){
+    console.log(names[i]);
+}
+*/
+
+//////2nd coding test
+/*
+
+var years = [ 2004 , 2006 , 1997 , 1995 ];
+var ages = [];
+
+for ( var i = 0 ; i < years.length ; i++){
+    ages[i]= 2018 - years[i];
+}
+
+for ( i = 0 ; i < ages.length ; i++ ){
+
+    if (ages[i] > 18 ) {
+        console.log(' The person is ' + i + ' is ' + ages[i] + ' years old, and he is full age. ');
+        
+    } else {
+        console.log(' The person is ' + i + ' is ' + ages[i] + ' years old, and he is not full age. ');
+    }
+    
+}
+
+
+function  printFullAges(year){
+    
+    var ages = [];
+    var fullAges =[];
+
+    for ( var i = 0 ; i < years.length ; i++){
+        ages[i]= 2018 - years[i];
+    }
+    
+    for ( i = 0 ; i < ages.length ; i++ ){
+    
+        if (ages[i] > 18 ) {
+            console.log(' The person is ' + i + ' is ' + ages[i] + ' years old, and he is full age. ');
+            fullAges.push(true);
+            
+        } else {
+            console.log(' The person is ' + i + ' is ' + ages[i] + ' years old, and he is not full age. ');
+            fullAges.push(false);
+        }
+    }
+    return fullAges;
+}
+
+var years = [ 2004 , 2006 , 1997 , 1995 ];
+var full_1 = printFullAges(years);
+var full_2 = printFullAges ([2011 , 2003 , 2013 , 1993]);
+*/
+
+///////// lecture 21: 
 
 
 
